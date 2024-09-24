@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     cout << fixed << setprecision(3);
     double g = 9.8, y = 1, a = 0.074, d = 0.0;
-    int k = 1;
+    int K = 1;
 
     for (int i = 10; i > 0; i -= 1) {
         if (d < 0.5) {
@@ -17,7 +17,7 @@ int main() {
         }
         double U = sqrt((g * d) / 2 + (2 * g * a) / (y * d)) * 10;
 
-        for (k; k > 0; k -= 1) {
+        for (K; K > 0; K -= 1) {
             cout << "d = " << d << "          U = " << U;
         }
         cout << '\n' << "    " << d << "              " << U;
